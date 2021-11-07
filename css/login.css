@@ -33,7 +33,7 @@ label{
     margin-top: 10px;
 }
 
-input[type="button"]{
+input[type="submit"]{
     width: 100%;
     font-size: 20px;
     padding: 10px;
