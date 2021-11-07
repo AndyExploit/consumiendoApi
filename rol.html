@@ -7,7 +7,7 @@
     <title>Rol</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body onload="GetIndex()">
     <nav class="navbar">
         <div class="container-icon">
             <img src="img/logoInicio.gif" class="primary-icon" style="width: 35px; border-radius: 15px;">
@@ -22,6 +22,9 @@
             <li class="list-item">
                 <a href="rol.html">Rol</a>
             </li>
+            <li class="list-item">
+                <button id="cerrarSesion-button">Cerrar Sesion</button>
+            </li>
         </ul>
         <div class="menu" id="toggle-button">
             <div class="menu-line"></div>
@@ -29,7 +32,16 @@
             <div class="menu-line"></div>
         </div>
     </nav>
+
+    <div class="container-item">
+          <div>
+            <ul class="ul-roles">
+            </ul>
+          </div>
+      </div>
+
 </body>
 
 <script src="js/main.js"></script>
+<script src="js/rol.js"></script>
 </html>
