@@ -7,9 +7,6 @@ url = localStorage.getItem("urlApi");
 var roles;
 
 function GetIndex(){
-    console.log(token)
-    console.log(url)
-
     fetch(this.url + "Rol",{
         method:'GET',
         headers:{
@@ -21,16 +18,19 @@ function GetIndex(){
         .then(data => {
             this.roles = data;
             let html = "";
-            console.log(this.roles);
 
             this.roles.forEach(item => {
-                console.log(item)
                 const li = `
-                <li>
-                <p>${item.nombre}</p>
+                <div class="card">
+            <div class="card-image car-1"></div>
+            <h2>${item.nombre}</h2>
+            <p>Nombre: ${item.nombre}</p>
+            <div class="botones">
+                <button type="button" data-id="${item.id}">Ver</button>
                 <button type="button" data-id="${item.id}">🗑 Eliminar</button>
                 <button type="button" data-id="${item.id}">🖉 Editar</button>
-              </li>
+            </div>   
+        </div>
                 `;
                 html += li;
             });

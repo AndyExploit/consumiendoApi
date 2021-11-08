@@ -5,6 +5,10 @@
     font-family: Arial;
 }
 
+body{
+    background: #010409;
+}
+
 .navbar{
     background:#161b22;
     color:white;
@@ -81,4 +85,54 @@
     .active {
         display: block;
     }
+}
+
+/* estilos de los cards */
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 320px;
+    /* height: 400px; */
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    background-color:#30363d;
+    height: 40px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card .botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card button{
+    padding: 5px 10px;
+    display: block;
+    margin: 10px;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
 }
