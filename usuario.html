@@ -7,7 +7,7 @@
     <title>Usuario</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body onload="GetIndex()">
+<body onload="myOnLoad()">
     <nav class="navbar">
         <div class="container-icon">
             <img src="img/logoInicio.gif" class="primary-icon" style="width: 35px; border-radius: 15px;">
@@ -33,11 +33,85 @@
         </div>
     </nav>
 
+    <!-- modal crear -->
+    <section class="section-modal">
+        <button id="abrirModalFormulario">Crear</button>
+
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>Crear Usuario</h1>
+            <form action="" class="formulario-modal" id="formulario-crear">
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" name="">
+                </div>
+                <div>
+                    <label for="">Apellido</label>
+                    <input type="text" name="">
+                </div>
+                <div>
+                    <label for="">Dui</label>
+                    <input type="text" name="">
+                </div>
+                <div>
+                    <label for="">Rol</label>
+                    <select name="" id="select-roles">
+                    </select>
+                </div>
+                <div>
+                    <label for="">Numero</label>
+                    <input type="text" name="">
+                </div>
+                <div>
+                    <label for="">Login</label>
+                    <input type="text" name="">
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="text" name="">
+                </div>
+                <div>
+                    <label for="">Confirmar Password</label>
+                    <input type="text" name="">
+                </div>
+                <div>
+                    <label for="">Estado</label>
+                    <select name="" id="">
+                        <option value="1">Activo</option>
+                        <option value="0">Inactivo</option>
+                    </select>
+                </div>
+                <div>
+                    <button>Crear</button>
+                </div>   
+            </form>
+            <button id="cerrarModalFormulario">Cancelar</button>
+        </div>
+    </div>
+    </section>
+    <!-- fin modal crear -->
+
     <section class="container ul-usuarios">
         <div class="">
             
         </div>
     </section>
+
+    <!-- prueba modal -->
+    <!-- <section class="section-modal">
+        <button id="open">Abrir modal test</button>
+
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>Modals are epic</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officiis cupiditate quas vero! Neque
+                non voluptates quos blanditiis illum labore porro molestias, consequuntur temporibus aspernatur!
+                Sequi quibusdam quis aliquam optio?</p>
+            <button id="close">Close</button>
+        </div>
+    </div>
+    </section> -->
+
 </body>
 
 <script src="js/main.js"></script>
