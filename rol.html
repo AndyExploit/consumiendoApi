@@ -53,8 +53,37 @@
             <button id="cerrarModalCrear">Cancelar</button>
         </div>
     </div>
-    </section>
     <!-- fin modal crear -->
+
+    <!-- modal Modificar -->
+    <div class="modal-container-modificar" id="modal_container_modificar">
+        <div class="modal-modificar">
+            <h1>Crear Rol</h1>
+            <form action="" class="formulario-modal" id="formulario-modificar">
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" name="" id="modificar-nombre">
+                </div>
+                <div>
+                    <button type="submit">Crear</button>
+                </div>   
+            </form>
+            <button id="cerrarModalModificar" onclick="closeModificar()">Cancelar</button>
+        </div>
+    </div>
+    <!-- fin modal modificar -->
+
+    <!-- Modal Eliminar-->
+    <div class="modal-container-eliminar" id="modal_container_eliminar">
+        <div class="modal-eliminar">
+            <h1>Eliminar Rol</h1>
+            <p>Estas seguro de eliminar este Rol?</p>
+            <button onclick="EliminarRol()">Eliminar</button>
+            <button id="cerrarModalEliminar" onclick="closeEliminar()">Cancelar</button>
+        </div>
+    </div>
+    <!-- fin modal Eliminar -->
+    </section>
 
     <section class="container ul-roles">
         <div class="">

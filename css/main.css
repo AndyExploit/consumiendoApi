@@ -131,12 +131,12 @@ body{
     margin: 10px;
 }
 
-.card:hover{
+/* .card:hover{
     transform: scale(1.03);
     transition: all 0.25s ease;
-}
+} */
 
-/*Estilos de los modales*/
+/*Estilos del modal crear*/
 .section-modal button{
     background-color: #47a386;
     border:0;
@@ -186,4 +186,90 @@ body{
     opacity: 0.7;
 }
 
-/*Fin estilos modales*/
+/*Fin estilos del modal crear*/
+
+/*Estilos del modal eliminar*/
+
+.modal-container-eliminar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container-eliminar.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-eliminar{
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px;
+    text-align: center;
+}
+
+.modal-eliminar h1{
+    margin: 0;
+}
+
+.modal-eliminar p{
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/*Fin estilos del modal eliminar*/
+
+/*Estilos del modal modificar*/
+
+.modal-container-modificar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container-modificar.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-modificar{
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px;
+    text-align: center;
+}
+
+.modal-modificar h1{
+    margin: 0;
+}
+
+.modal-modificar p{
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/*Fin estilos del modal modificar*/
