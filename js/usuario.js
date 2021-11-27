@@ -10,6 +10,8 @@ var roles;
 function myOnLoad() {
     GetIndex();
     ObtenerRoles();
+
+    alert('La entidad usuario se encuentra en mantenimiento y no funciona correctamente');
    }
 
 function GetIndex(){
@@ -39,7 +41,6 @@ function GetIndex(){
             <p>Estado: ${item.estado}</p>
             <p>Fecha de Registro: ${item.fechaRegistro}</p>
             <div class="botones">
-                <button type="button" data-id="${item.id}">Ver</button>
                 <button type="button" data-id="${item.id}">🗑 Eliminar</button>
                 <button type="button" data-id="${item.id}">🖉 Editar</button>
             </div>   

@@ -34,6 +34,10 @@
         </div>
     </nav>
 
+    <div class="titulo-pagina">
+        <h1>Rol</h1>
+    </div>
+
     <!-- modal crear -->
     <section class="section-modal">
         <button id="abrirModalCrear">Crear</button>
@@ -41,12 +45,13 @@
     <div class="modal-container" id="modal_container">
         <div class="modal">
             <h1>Crear Rol</h1>
+            <br>
             <form action="" class="formulario-modal" id="formulario-crear">
-                <div>
+                <div class="modal-flex-input">
                     <label for="">Nombre</label>
                     <input type="text" name="" id="crear-nombre">
                 </div>
-                <div>
+                <div class="modal-flex-input">
                     <button type="submit">Crear</button>
                 </div>   
             </form>
@@ -58,14 +63,15 @@
     <!-- modal Modificar -->
     <div class="modal-container-modificar" id="modal_container_modificar">
         <div class="modal-modificar">
-            <h1>Crear Rol</h1>
+            <h1>Modificar Rol</h1>
+            <br>
             <form action="" class="formulario-modal" id="formulario-modificar">
-                <div>
+                <div class="flex-input">
                     <label for="">Nombre</label>
                     <input type="text" name="" id="modificar-nombre">
                 </div>
-                <div>
-                    <button type="submit">Crear</button>
+                <div class="modal-flex-input">
+                    <button type="submit">Modificar</button>
                 </div>   
             </form>
             <button id="cerrarModalModificar" onclick="closeModificar()">Cancelar</button>
@@ -78,6 +84,7 @@
         <div class="modal-eliminar">
             <h1>Eliminar Rol</h1>
             <p>Estas seguro de eliminar este Rol?</p>
+            <br>
             <button onclick="EliminarRol()">Eliminar</button>
             <button id="cerrarModalEliminar" onclick="closeEliminar()">Cancelar</button>
         </div>

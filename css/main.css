@@ -9,6 +9,12 @@ body{
     background: #010409;
 }
 
+.titulo-pagina{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
 .navbar{
     background:#161b22;
     color:white;
@@ -16,6 +22,16 @@ body{
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
+}
+
+.navbar button{
+    background-color: #47a386;
+    border:0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
 }
 
 .nav-list{
@@ -273,3 +289,14 @@ body{
 }
 
 /*Fin estilos del modal modificar*/
+
+/* formularios de los modales */
+.formulario-modal input[type="text"]{
+    font-size: 18px;
+}
+
+.modal-flex-input{
+    padding: 5px;
+}
+
+/* fin formularios de los modales */
