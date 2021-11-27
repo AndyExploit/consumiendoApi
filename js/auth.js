@@ -10,7 +10,7 @@ function estaAutenticado(){
 
 const formularioLogin = document.querySelector('#formulario-login');
 
-localStorage.setItem("urlApi","http://webapi.andromedacorp.3hcps.info/api/");
+localStorage.setItem("urlApi","https://SalonBellezaWebApi.somee.com/api/");
 url = localStorage.getItem("urlApi");
 
 formularioLogin.addEventListener('submit', (e)=>{//capturamos el evento
